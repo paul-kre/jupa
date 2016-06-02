@@ -12,7 +12,7 @@ require_once("../includes/initialize.php");
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="<?php echo URL; ?>public/apple-touch-icon.png">
-        <link rel="icon" type="image/png" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="<?php echo URL; ?>public/apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/normalize.css">

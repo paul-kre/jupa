@@ -1,6 +1,10 @@
 <IfModule mod_rewrite.c>
-RewriteEngine on
+    RewriteEngine on
 
-RewriteRule ^/{0,1}$  public/index.php [QSA,L]
+    RewriteRule ^/{0,1}$ public/index.php [L]
+    RewriteRule ^page_name/{0,1}$ public/index.php?p=page_name [L]
+    RewriteRule ^category/([a-zA-Z0-9_]*)/{0,1}$ public/index.php?c=$1 [L]
+
+    RewriteRule ^.*$ public/404.php [QSA]
 
 </IfModule>

@@ -3,7 +3,7 @@ require_once("../includes/initialize.php");
 ?>
 
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -17,7 +17,7 @@ require_once("../includes/initialize.php");
 
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/normalize.css">
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/main.css">
-        <script src="<?php echo URL; ?>public/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="<?php echo URL; ?>public/js/vendor/modernizr-custom.min.js"></script>
         <script src="<?php echo URL; ?>public/js/main.js"></script>
     </head>
     <body>

@@ -25,7 +25,7 @@ function output_message($message="") {
 }
 
 function include_layout_template($template = "") {
-	include(SITE_ROOT."public".DS."layouts".DS.$template.".php");
+	include SITE_ROOT."public".DS."layout".DS.$template.".php";
 }
 
 function make_clickable_links($text) {

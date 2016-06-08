@@ -280,9 +280,3 @@ textarea {
         page-break-after: avoid;
     }
 }
-
-
-
-.no-js {
-    display: none;
-}

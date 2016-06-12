@@ -9,7 +9,7 @@
     RewriteRule ^/{0,1}category/([a-zA-Z0-9_]*)/{0,1}$ public/index.php?c=$1 [L]
 
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^.*$ public/404.php [L]
+    RewriteRule .* public/404.php [L]
 
 </IfModule>
 

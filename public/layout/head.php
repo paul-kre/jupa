@@ -18,8 +18,8 @@
     <meta content="<?php echo URL; ?>public/apple-touch-icon.png" property="og:image">
 
     <link href="<?php echo URL; ?>" rel="canonical" />
-    <link rel="apple-touch-icon" href="<?php echo URL; ?>public/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="<?php echo URL; ?>public/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="<?php echo URL; ?>public/icon.png">
+    <link rel="icon" type="image/png" href="<?php echo URL; ?>public/icon.png">
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/normalize.css">

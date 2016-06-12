@@ -14,7 +14,7 @@
     <meta content="website" property="og:type">
     <meta content="<?php echo $page->description; ?>" property="og:description">
 
-    <meta content="<?php echo $_SERVER["REQUEST_URI"]; ?>" property="og:url">
+    <meta content="<?php echo URL.substr($_SERVER["REQUEST_URI"], 1); ?>" property="og:url">
     <meta content="<?php echo URL; ?>public/apple-touch-icon.png" property="og:image">
 
     <link href="<?php echo URL; ?>" rel="canonical" />

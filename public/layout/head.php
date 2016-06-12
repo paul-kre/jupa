@@ -5,14 +5,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php echo TITLE.(!empty($page->title()) ? " / ".$page->title() : null); ?></title>
-    <meta content="<?php echo $page->description(); ?>" name="description">
+    <title><?php echo TITLE.(!empty($page->title) ? " / ".$page->title : null); ?></title>
+    <meta content="<?php echo $page->description; ?>" name="description">
     <meta content="<?php echo KEYWORDS; ?>" name="keywords">
     <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
 
-    <meta content="<?php echo $page->title(); ?>" property="og:title">
+    <meta content="<?php echo $page->title; ?>" property="og:title">
     <meta content="website" property="og:type">
-    <meta content="<?php echo $page->description(); ?>" property="og:description">
+    <meta content="<?php echo $page->description; ?>" property="og:description">
 
     <meta content="<?php echo $_SERVER["REQUEST_URI"]; ?>" property="og:url">
     <meta content="<?php echo URL; ?>public/apple-touch-icon.png" property="og:image">

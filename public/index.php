@@ -1,8 +1,6 @@
-<?php 
-require_once("../includes/initialize.php");
+<?php
 
-if(isset($_GET['p'])) $page->title($_GET['p']);
-$page->description("This is the main description");
+require_once("../includes/initialize.php");
 
 include_layout_template("head");
 

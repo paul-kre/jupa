@@ -1,14 +1,23 @@
-<?php require_once "../includes/initialize.php"; ?>
+<?php global $page; ?>
 
 <!doctype html>
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php echo TITLE.(!empty($page->title()) ? " / ".$page->title() : null); ?></title>
+    <meta content="<?php echo $page->description(); ?>" name="description">
+    <meta content="<?php echo KEYWORDS; ?>" name="keywords">
+    <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
 
+    <meta content="<?php echo $page->title(); ?>" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="<?php echo $page->description(); ?>" property="og:description">
+
+    <meta content="<?php echo $_SERVER["REQUEST_URI"]; ?>" property="og:url">
+    <meta content="<?php echo URL; ?>public/apple-touch-icon.png" property="og:image">
+
+    <link href="<?php echo URL; ?>" rel="canonical" />
     <link rel="apple-touch-icon" href="<?php echo URL; ?>public/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="<?php echo URL; ?>public/apple-touch-icon.png">
 

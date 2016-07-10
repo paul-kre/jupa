@@ -3,7 +3,7 @@
 // General Constants
 defined('URL') ? null : define('URL', 'http://localhost/php_template/');
 defined('TITLE') ? null : define('TITLE', 'PHP Template');
-defined('KEYWORDS') ? null : define('KEYWORDS', 'Keyword1,Keyword2,Keyword3');
+defined('KEYWORDS') ? null : define('KEYWORDS', 'PHP,Template,Simple');
 
 // Database Constants
 defined("DB_SERVER") ? null : define("DB_SERVER", "localhost");

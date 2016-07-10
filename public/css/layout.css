@@ -58,6 +58,12 @@ header #logo .header-title .small {
     font-size: 1.1rem;
 }
 
+nav {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(100vh - 190px);
+}
+
 .nav-main li {
     border-top: 1px solid #353739;
     position: relative;

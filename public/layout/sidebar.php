@@ -1,44 +1,29 @@
 <?php
+require_once LIB_PATH."page.php";
 
-
-$viewLinks = [
-    ['<span class="small">vom</span> Aussen', 'aussen'],
-    ['<span class="small">zum</span> Innen', 'innen'],
-    ['<span class="small">zur</span> Küche', 'kueche'],
-    ['<span class="small">ins</span> Bad', 'bad'],
-    ['<span class="small">mit</span> Einbauten', 'einbauten'],
-    ['<span class="small">durch</span> Farbe <span class="small">ins</span> Licht', 'licht']
-];
-
-$pageLinks = [
-    ['Konzept & Kontakt', ''],
-    ['Ansichten', $viewLinks[0][1]]
-];
-
-
-function arrToString($arr=[]) {
-    $str = '';
-    $str .= '<a href="'.URL.$arr[1].'" class="vertical-center">';
-    $str .= '<div class="vertical-el"><span>'.$arr[0].'</span></div></a>';
-    return $str;
+function pageToLink($page) {
+    global $activePage;
+    echo '<a class="vertical-center'.(strcmp($activePage->urlname, $page->urlname) == 0 ? ' active' : '').'" href="'
+        .($page->enabled ? URL.$page->urlname : '#').'">';
+    echo '<div class="vertical-el"><span>'.$page->nicename.'</span></div></a>';
 }
 
-
-$linkString = '';
-foreach ($pageLinks as $pageLink) {
-    $linkString .= '<li>';
-    $linkString .= arrToString($pageLink);
-    if(strcmp($pageLink[0], "Ansichten") == 0) {
-        $linkString .= '<ul>';
-        foreach($viewLinks as $viewLink) {
-            $linkString .= '<li>';
-            $linkString .= arrToString($viewLink);
-            $linkString .= '</li>';
-        }
-        $linkString .= '</ul>';
+function formatPages($pages, $class='') {
+    if(!$pages) return;
+    echo '<ul'.(!empty($class) ? ' class="'.$class.'"' : '' ).'>';
+    foreach($pages as $page) {
+        echo '<li>';
+        pageToLink($page);
+        $subPages = $page->findChildren();
+        formatPages($subPages);
+        echo '</li>';
     }
-    $linkString .= '</li>';
+    echo '</ul>';
 }
+
+$mainPages = Page::findMainPages();
+
+
 
 ?>
 
@@ -54,8 +39,6 @@ foreach ($pageLinks as $pageLink) {
         </div>
     </header>
     <nav>
-        <ul class="nav-main">
-            <?php echo $linkString; ?>
-        </ul>
+        <?php formatPages($mainPages, 'nav-main'); ?>
     </nav>
 </div>

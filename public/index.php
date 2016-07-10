@@ -1,10 +1,14 @@
 <?php
-
 require_once("../includes/initialize.php");
 
-include_layout_template("head");
+if(isset($_GET['p'])) {
+    $activePage = Page::findByUrlName($_GET['p']);
+    if(!$activePage) redirectTo("404.php");
+}
 
-include_layout_template("body");
+includeLayoutTemplate("head");
 
-include_layout_template("footer");
+includeLayoutTemplate("body");
+
+includeLayoutTemplate("footer");
 

@@ -1,1 +1,3 @@
-<p>Hello world! This is HTML5 Boilerplate.</p>
+<?php
+
+include_layout_template("sidebar");

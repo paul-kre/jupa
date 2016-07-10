@@ -22,8 +22,10 @@
     <link rel="icon" type="image/png" href="<?php echo URL; ?>public/icon.png">
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/normalize.css">
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/main.css">
+    <link rel="stylesheet" href="<?php echo URL; ?>public/css/layout.css">
     <script src="<?php echo URL; ?>public/js/vendor/modernizr-custom.min.js"></script>
     <script src="<?php echo URL; ?>public/js/plugins.js"></script>
     <script src="<?php echo URL; ?>public/js/main.js"></script>

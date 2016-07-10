@@ -1,9 +1,9 @@
 <?php
 
 // General Constants
-defined('URL') ? null : define('URL', 'http://localhost/php_template/');
-defined('TITLE') ? null : define('TITLE', 'PHP Template');
-defined('KEYWORDS') ? null : define('KEYWORDS', 'PHP,Template,Simple');
+defined('URL') ? null : define('URL', 'http://localhost/juliapaschos/');
+defined('TITLE') ? null : define('TITLE', 'JULIA PASCHOS');
+defined('KEYWORDS') ? null : define('KEYWORDS', 'Architektur,Innenarchitektur,Design,Julia,Paschos');
 
 // Database Constants
 defined("DB_SERVER") ? null : define("DB_SERVER", "localhost");

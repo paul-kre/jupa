@@ -1,18 +1,21 @@
-<?php global $page; ?>
+<?php
+global $activePage;
+$description = !empty($activePage->description) ? $activePage->description : DESCRIPTION;
+?>
 
 <!doctype html>
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php echo TITLE.(!empty($page->title) ? " / ".$page->title : null); ?></title>
-    <meta content="<?php echo $page->description; ?>" name="description">
+    <title><?php echo TITLE.strip_tags(!empty($activePage->nicename) ? " / ".$activePage->nicename : null); ?></title>
+    <meta content="<?php echo $description; ?>" name="description">
     <meta content="<?php echo KEYWORDS; ?>" name="keywords">
     <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
 
-    <meta content="<?php echo $page->title; ?>" property="og:title">
+    <meta content="<?php echo $activePage->nicename; ?>" property="og:title">
     <meta content="website" property="og:type">
-    <meta content="<?php echo $page->description; ?>" property="og:description">
+    <meta content="<?php echo $description; ?>" property="og:description">
 
     <meta content="<?php echo URL.substr($_SERVER["REQUEST_URI"], 1); ?>" property="og:url">
     <meta content="<?php echo URL; ?>public/apple-touch-icon.png" property="og:image">

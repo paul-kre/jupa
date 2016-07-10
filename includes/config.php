@@ -3,6 +3,7 @@
 // General Constants
 defined('URL') ? null : define('URL', 'http://localhost/juliapaschos/');
 defined('TITLE') ? null : define('TITLE', 'JULIA PASCHOS');
+defined('DESCRIPTION') ? null : define('DESCRIPTION', 'Julia Paschos ist eine Architektin.');
 defined('KEYWORDS') ? null : define('KEYWORDS', 'Architektur,Innenarchitektur,Design,Julia,Paschos');
 
 // Database Constants

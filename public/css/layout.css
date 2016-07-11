@@ -33,9 +33,36 @@ body {
 }
 
 #intro {
-    display: block;
-    width: 100vw;
+    position: relative;
+    width: 100%;
     height: 100vh;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#intro .intro-text {
+    position: absolute;
+    left: 10%;
+    bottom: 25%;
+    max-width: 80%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+}
+
+#intro .intro-text h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#intro .intro-text .intro-logo {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% - 1.8rem);
+    width: 40%
 }
 
 #sidebar {
@@ -155,7 +182,14 @@ nav {
 }
 
 @media (max-width: 767px) {
+    html {
+        font-size: 85%;
+    }
 
+    #intro .intro-text, #intro .intro-text h1 {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
 }
 
 
@@ -172,7 +206,9 @@ nav {
 
 
 
-
+.relative {
+    position: relative;
+}
 
 .vertical-center {
     display: table;

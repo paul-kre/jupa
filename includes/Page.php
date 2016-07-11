@@ -26,7 +26,7 @@ class Page extends DatabaseObject {
     public static function findMainPages($str="") {
         global $db;
         $str = $db->escapeValue($str);
-        return static::findBySql("SELECT * FROM " . static::$tableName . " WHERE parent IS NULL ORDER BY position");
+        return static::findBySql("SELECT * FROM " . static::$tableName . " WHERE parent IS NULL AND nicename IS NOT NULL ORDER BY position");
     }
 }
 

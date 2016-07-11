@@ -1,6 +1,7 @@
 <?php
 global $activePage;
 $description = !empty($activePage->description) ? $activePage->description : DESCRIPTION;
+$title = TITLE.strip_tags(!empty($activePage->nicename) ? " / ".$activePage->nicename : null);
 ?>
 
 <!doctype html>
@@ -8,12 +9,12 @@ $description = !empty($activePage->description) ? $activePage->description : DES
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php echo TITLE.strip_tags(!empty($activePage->nicename) ? " / ".$activePage->nicename : null); ?></title>
+    <title><?php echo $title; ?></title>
     <meta content="<?php echo $description; ?>" name="description">
     <meta content="<?php echo KEYWORDS; ?>" name="keywords">
-    <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
+    <meta content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1" name="viewport">
 
-    <meta content="<?php echo $activePage->nicename; ?>" property="og:title">
+    <meta content="<?php echo $title; ?>" property="og:title">
     <meta content="website" property="og:type">
     <meta content="<?php echo $description; ?>" property="og:description">
 

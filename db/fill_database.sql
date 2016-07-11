@@ -1,5 +1,8 @@
 USE juliapaschos;
 
+INSERT INTO page (urlname)
+	VALUES ('home');
+
 INSERT INTO page (urlname, nicename, position)
 	VALUES ('kontakt', 'Kontakt & Konzept', 0);
 

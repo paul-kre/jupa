@@ -2,12 +2,19 @@
 require_once LIB_PATH."initialize.php";
 global $activePage;
 
-$isHomepage = (strcmp($activePage->urlname, "home") == 0);
+if($activePage->urlname == "home") includeLayoutTemplate("intro");
 
-if($isHomepage) includeLayoutTemplate("intro");
+?>
 
-echo '<div id="container">';
 
-includeLayoutTemplate("sidebar");
+<div id="container">
 
-echo '</div>';
+    <?php includeLayoutTemplate("sidebar"); ?>
+
+    <div id="main-content">
+        <article class="view">
+            <?php includePage($activePage->urlname); ?>
+        </article>
+    </div>
+
+</div>

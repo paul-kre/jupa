@@ -25,7 +25,13 @@ function outputMessage($message="") {
 }
 
 function includeLayoutTemplate($template = "") {
-	include SITE_ROOT."public".DS."layout".DS.$template.".php";
+	$filePath = SITE_ROOT."public".DS."layout".DS.$template.".php";
+	if(file_exists($filePath)) include $filePath;
+}
+
+function includePage($page = "") {
+	$filePath = SITE_ROOT."public".DS."page".DS.$page.".php";
+	if(file_exists($filePath)) include $filePath;
 }
 
 function makeClickableLinks($text) {

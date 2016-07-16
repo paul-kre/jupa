@@ -3,7 +3,7 @@ require_once LIB_PATH."page.php";
 
 function pageToLink($page) {
     global $activePage;
-    echo '<a class="indented vertical-center'.(strcmp($activePage->urlname, $page->urlname) == 0 ? ' active' : '').'" href="'
+    echo '<a class="indented vertical-center'.($activePage->urlname == $page->urlname ? ' active' : '').'" href="'
         .($page->enabled ? URL.$page->urlname : '#').'">';
     echo '<div class="vertical-el"><span>'.$page->nicename.'</span></div></a>';
 }
@@ -26,6 +26,7 @@ $mainPages = Page::findMainPages();
 
 
 ?>
+
 
 <div id="sidebar">
     <header>

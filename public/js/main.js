@@ -1,16 +1,13 @@
-var sidebar, intro, container, introEnabled, mainContent;
+var sidebar, intro, container, introEnabled, mainContent, sidebarEnabled;
 
 function init() {
     sidebar = document.querySelector("#sidebar");
-    container = document.querySelector("#container");
     mainContent = document.querySelector("#main-content");
 
     intro = document.querySelector("#intro");
-    introEnabled = intro != null;
-    if(introEnabled) {
-        sidebar.style.position = "absolute";
-        container.style.position = "relative";
-    }
+    if(intro != null) sidebar.style.position = "absolute";
+
+    document.querySelector("#menu-button").onclick = toggleSidebar;
 
     window.onwheel = scroll; // modern standard
     window.onscroll = scroll; // modern standard
@@ -31,21 +28,26 @@ function resize(e) {
     }
 }
 
+function toggleSidebar() {
+    if(sidebarEnabled) hideSidebar();
+    else showSidebar();
+}
+
 function hideSidebar() {
     sidebar.style.left = "-100%";
     mainContent.style.paddingLeft = 0;
+    sidebarEnabled = false;
 }
 
 function showSidebar() {
     sidebar.style.left = "";
     mainContent.style.paddingLeft = "";
+    sidebarEnabled = true;
 }
 
 function scroll(e) {
     if(window.scrollY > window.innerHeight) {
-        intro.style.display = "none";
         sidebar.style.position = "fixed";
-        container.style.position = "fixed";
     }
 }
 

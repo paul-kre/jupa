@@ -37,10 +37,7 @@ body {
 }
 
 #container {
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: 0;
+    position: relative;
     background: white;
     overflow: auto;
 }
@@ -76,6 +73,19 @@ body {
     right: 0;
     bottom: calc(100% - 1.8rem);
     width: 40%
+}
+
+#menu-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 16px;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    z-index: 2;
 }
 
 #sidebar {

@@ -9,7 +9,11 @@ if($activePage->urlname == "home") includeLayoutTemplate("intro");
 
 <div id="container">
 
-    <div id="menu-button" style="background-image: url('<?php echo URL; ?>public/img/layout/menu.png');"></div>
+    <div id="menu-button">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 
     <?php includeLayoutTemplate("sidebar"); ?>
 

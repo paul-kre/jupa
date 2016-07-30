@@ -1,13 +1,20 @@
-var sidebar, intro, container, introEnabled, mainContent, sidebarEnabled;
+// elements
+var sidebar, intro, mainContent, menuButton;
+
+// booleans
+var sidebarEnabled, introVisible;
+
+// colors
+var LIGHT_BLUE = "rgb(168, 198, 212)";
 
 function init() {
-    sidebar = document.querySelector("#sidebar");
-    mainContent = document.querySelector("#main-content");
+    sidebar = $("#sidebar");
+    mainContent = $("#main-content");
+    menuButton = $("#menu-button");
 
-    intro = document.querySelector("#intro");
-    if(intro != null) sidebar.style.position = "absolute";
+    initIntro();
 
-    document.querySelector("#menu-button").onclick = toggleSidebar;
+    menuButton.click(toggleSidebar);
 
     window.onwheel = scroll; // modern standard
     window.onscroll = scroll; // modern standard
@@ -23,8 +30,10 @@ function init() {
 function resize(e) {
     if(window.innerWidth < 1024) {
         hideSidebar();
+        menuButton.show();
     } else {
         showSidebar();
+        menuButton.hide();
     }
 }
 
@@ -34,20 +43,43 @@ function toggleSidebar() {
 }
 
 function hideSidebar() {
-    sidebar.style.left = "-100%";
-    mainContent.style.paddingLeft = 0;
+    sidebar.css("left", "-100%");
+    mainContent.css("padding-left", 0);
+
+    menuButton.children().css("background", "black");
+
     sidebarEnabled = false;
 }
 
 function showSidebar() {
-    sidebar.style.left = "";
-    mainContent.style.paddingLeft = "";
+    sidebar.css("left", "");
+    mainContent.css("padding-left", "");
+
+    menuButton.children().css("background", LIGHT_BLUE);
+
     sidebarEnabled = true;
 }
 
 function scroll(e) {
-    if(window.scrollY > window.innerHeight) {
-        sidebar.style.position = "fixed";
+    updateIntro();
+}
+
+
+
+function initIntro() {
+    intro = document.querySelector("#intro");
+    introVisible = intro != null;
+    if(introVisible) sidebar.css("position", "absolute");
+}
+
+function updateIntro() {
+    if(introVisible) {
+        if(window.scrollY > window.innerHeight) {
+            //sidebar.style.position = "fixed";
+            sidebar.css("position", "fixed");
+            intro.style.display = "none";
+            introVisible = false;
+        } else sidebar.css("position", "absolute");
     }
 }
 

@@ -57,6 +57,7 @@ function showSidebar() {
 
     menuButton.children().css("background", LIGHT_BLUE);
 
+
     sidebarEnabled = true;
 }
 

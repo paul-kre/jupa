@@ -2,8 +2,8 @@
 require_once LIB_PATH."initialize.php";
 global $activePage;
 
-if($activePage->urlname == "home") includeLayoutTemplate("intro");
-
+//if($activePage->urlname == "home") includeLayoutTemplate("intro");
+if($activePage->urlname == "home") $activePage->nicename = "Kontakt & Konzept";
 ?>
 
 
@@ -13,6 +13,10 @@ if($activePage->urlname == "home") includeLayoutTemplate("intro");
         <div></div>
         <div></div>
         <div></div>
+    </div>
+
+    <div id="page-title">
+        <span><?php echo $activePage->nicename;?></span>
     </div>
 
     <?php includeLayoutTemplate("sidebar"); ?>

@@ -54,7 +54,7 @@ body {
     height: 100vh;
     background-position: 33% 50%;
     background-size: cover;
-    z-index: 10;
+    z-index: 20;
 }
 
 #intro .intro-text {
@@ -89,7 +89,7 @@ body {
     padding: 20px 30px;
     width: 80px;
     cursor: pointer;
-    z-index: 2;
+    z-index: 10;
 }
 
 #menu-button div {
@@ -112,6 +112,7 @@ body {
     height: 100%;
     background: rgb(168, 198, 212); /* light blue */
     overflow: hidden;
+    z-index: 5;
 
     -webkit-transition: left .5s ease;
     -moz-transition: left .5s ease;
@@ -140,6 +141,10 @@ header #logo .header-title {
 
 header #logo .header-title .small {
     font-size: 1.1rem;
+}
+
+article.view {
+    position: relative;
 }
 
 section {
@@ -273,7 +278,7 @@ nav {
 
 
 .gallery {
-    height: 50vh;
+    height: 80vh;
 }
 .gallery .photo-container {
     padding: 0 35px;
@@ -293,6 +298,73 @@ nav {
 .gallery .figure {
     height: 100%;
     padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page-title {
+    width: calc(100% - 530px);
+    margin-left: 330px;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    text-align: center;
+    overflow: hidden;
+    z-index: 2;
+
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+#page-title > span {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    color: rgba(148, 176, 188, .75); /* midtone blue */
+    text-transform: uppercase;
+}
+#page-title > span:before, #page-title > span:after {
+    content: '';
+    background: rgba(148, 176, 188, .75); /* midtone blue */
+    height: 1px;
+    position: absolute;
+    width: 800%;
+    top: 50%;
+}
+#page-title > span:before {
+    left: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+#page-title > span:after {
+    right: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+#page-title > span .small {
+    font-size: .67rem;
+    text-transform: none;
 }
 
 
@@ -330,6 +402,7 @@ nav {
     }
 
     #main-content {
+        position: relative;
         padding-left: 240px;
     }
 
@@ -345,7 +418,11 @@ nav {
         /*line-height: 2.2rem;*/
     }
     section {
-        padding: 25px 25px 100px;
+        padding: 50px 25px 100px;
+    }
+    #page-title {
+        width: calc(100% - 100px);
+        margin-left: 75px;
     }
     .gallery .photo-container {
         padding: 0 5px;
@@ -360,6 +437,9 @@ nav {
     #intro .intro-text, #intro .intro-text h1 {
         font-size: 1.4rem;
         line-height: 2.2rem;
+    }
+    .gallery {
+        height: 50vh;
     }
 }
 

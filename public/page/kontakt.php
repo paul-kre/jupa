@@ -49,12 +49,12 @@
 <section class="full-size">
     <div class="gallery">
         <div class="photo-container left">
-            <div style="background-image: url('<?php echo URL ?>public/img/bathroom_01.jpg" class="figure">
+            <div style="background-image: url('<?php echo URL ?>public/img/bathroom_01.jpg');" class="figure">
 
             </div>
         </div>
         <div class="photo-container right">
-            <div style="background-image: url('<?php echo URL ?>public/img/work_01.jpg" class="figure">
+            <div style="background-image: url('<?php echo URL ?>public/img/work_01.jpg');" class="figure">
 
             </div>
         </div>

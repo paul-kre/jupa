@@ -33,7 +33,7 @@ $mainPages = Page::findMainPages();
         <div id="logo">
             <img alt="Logo" src="<?php echo URL; ?>public/img/layout/logo.svg">
             <div class="header-title indented">
-                Julia <strong>Paschos</strong><br>
+                Julia<strong>Paschos</strong><br>
                 <span class="small">Architektur</span>
             </div>
             <a class="link-area" href="<?php echo URL; ?>"></a>

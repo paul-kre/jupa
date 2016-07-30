@@ -13,13 +13,19 @@ a {
     color: black;
 }
 
-strong {
+strong, h3 {
     font-weight: 600;
 }
 
 h1 {
     font-weight: 300;
     line-height: 3rem;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.15rem;
+    margin: 0;
 }
 
 p, h1 {
@@ -30,7 +36,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.02rem;
     font-size: 1.15rem;
     line-height: 2rem;
     height: auto;
@@ -54,7 +60,7 @@ body {
 #intro .intro-text {
     position: absolute;
     left: 10%;
-    bottom: 22%;
+    bottom: 180px;
     max-width: 80%;
     color: white;
     font-size: 3rem;
@@ -136,6 +142,15 @@ header #logo .header-title .small {
     font-size: 1.1rem;
 }
 
+section {
+    padding: 50px 200px 100px 50px;
+}
+
+.full-size {
+    padding: 0;
+    margin: 0;
+}
+
 nav {
     overflow-x: hidden;
     overflow-y: auto;
@@ -201,10 +216,6 @@ nav {
     transition: padding-left .5s ease;
 }
 
-.view {
-    padding: 50px 50px 0;
-}
-
 .left-small {
     width: 38%;
     float: left;
@@ -217,13 +228,14 @@ nav {
 }
 
 .text {
-
+    line-height: 2.2rem;
 }
 
 .figure {
-    height: 80vh;
+    padding-top: 150%;
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .kontakt-text {
@@ -247,6 +259,43 @@ nav {
 .kontakt {
     margin-bottom: 100px;
 }
+
+.kontakt .figure {
+    padding-top: 80vh;
+}
+
+
+
+
+
+
+
+
+
+.gallery {
+    height: 50vh;
+}
+.gallery .photo-container {
+    padding: 0 35px;
+    height: 100%;
+}
+.gallery .photo-container.left {
+    width: 60%;
+    float: left;
+}
+.gallery .photo-container.right {
+    width: 40%;
+    float: right;
+}
+.gallery .photo-container.right > .figure {
+    background-size: contain;
+}
+.gallery .figure {
+    height: 100%;
+    padding: 0;
+}
+
+
 
 
 
@@ -294,6 +343,12 @@ nav {
         font-size: 2rem;
         letter-spacing: 0.08rem;
         /*line-height: 2.2rem;*/
+    }
+    section {
+        padding: 25px 25px 100px;
+    }
+    .gallery .photo-container {
+        padding: 0 5px;
     }
 }
 

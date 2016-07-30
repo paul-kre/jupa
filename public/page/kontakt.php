@@ -46,3 +46,63 @@
         </div>
     </div>
 </section>
+<section class="full-size">
+    <div class="gallery">
+        <div class="photo-container left">
+            <div style="background-image: url('<?php echo URL ?>public/img/bathroom_01.jpg" class="figure">
+
+            </div>
+        </div>
+        <div class="photo-container right">
+            <div style="background-image: url('<?php echo URL ?>public/img/work_01.jpg" class="figure">
+
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="right-big">
+        <div class="text">
+            <p>
+            <h3>Impressum</h3>
+
+            USt.-IdNr.: DE<br><br>
+
+            Zuständige Architektenkammer
+            Architektenkammer NW, Düsseldorf
+            Inhaltliche Verantw. gem. §10 Absatz 3 MDStV:
+            Dipl.-Ing. Architektur Julia Paschos
+            </p>
+
+            <p>
+            <h3>Konzept & Gestaltung & Realisierung der Website</h3>
+            <a href="#" target="_blank">keydesigns Borgmann Durrie GbR</a>
+            </p>
+
+            <p>
+            <h3>Fotografie</h3>
+            <a href="#" target="_blank">Tania Walck</a>
+            </p>
+
+            <p>
+            <h3>Text</h3>
+            <a href="#" target="_blank">Elisabeth Schönert</a>
+            </p>
+
+            <p>
+            <h3>Copyright und Urheberrecht</h3>
+            Inhalt und Struktur der Website sind urheberrechtlich geschützt. Alle Texte, Bilder und Graphiken unterliegen Urheberrechten und anderen Gesetzen zum Schutz geistigen Eigentums. Sie dürfen weder für Handelszwecke oder zur Weitergabe kopiert, noch verändert und auf anderen Websites verwendet werden.
+            </p>
+
+            <p>
+            <h3>Haftungsausschluss</h3>
+            Die Angaben auf dieser Website dienen nur zur generellen Information. Wir haben diese sorgfältig geprüft, übernehmen aber keinerlei Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der angebotenen Information. Die Inhalte externer Websites, die über Hyperlinks von dieser Website aus erreicht werden können oder die auf diese Websites verweisen, sind fremde Inhalte, auf die wir keinen Einfluss haben und für die Julia Paschos Architektur keinerlei Gewähr übernimmt. Wir übernehmen keine Haftung für über das Internet übermittelte Nachrichten (E-Mails).
+            </p>
+
+            <p>
+            <h3>Datenschutz</h3>
+            Sofern innerhalb des Internetangebots die Möglichkeit zur Eingabe persönlicher oder geschäftlicher Daten besteht, so erfolgt die Preisgabe dieser Daten seitens des Nutzers auf ausdrücklich freiwilliger Basis.
+            </p>
+        </div>
+    </div>
+</section>

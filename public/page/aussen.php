@@ -31,7 +31,7 @@
     </p>
 </section>
 <section class="full-size">
-    <?php buildGallery("building_02", "building_details_a_01", ["building_details_b_01", "building_details_c_01", "building_details_d_01"]); ?>
+    <?php buildGallery("building_02", "building_details_a_01", array("building_details_b_01", "building_details_c_01", "building_details_d_01")); ?>
 </section>
 <section class="text-mid">
     <h2>Einen Neubau entstehen zu lassen ist ein Schaffensprozess.</h2>
@@ -43,7 +43,7 @@
     </p>
 </section>
 <section class="full-size">
-    <?php buildGallery("building_03", "garden_a_01", ["garden_b_01"]); ?>
+    <?php buildGallery("building_03", "garden_a_01", array("garden_b_01")); ?>
 </section>
 <section class="text-mid">
     <h2>Der Anbau wandelt das Einfamilienhaus.</h2>
@@ -66,5 +66,5 @@
     </p>
 </section>
 <section class="full-size">
-    <?php buildGallery("attic_01", "bathroom_details_a_01", ["bathroom_details_b_01", "bathroom_details_c_01", "bathroom_details_d_01"]); ?>
+    <?php buildGallery("attic_01", "bathroom_details_a_01", array("bathroom_details_b_01", "bathroom_details_c_01", "bathroom_details_d_01")); ?>
 </section>

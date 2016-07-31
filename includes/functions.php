@@ -67,7 +67,7 @@ function makeClickableLinks($text) {
 
 
 
-function buildGallery($picA = '', $picB = '', $picArr = []) {
+function buildGallery($picA = '', $picB = '', $picArr = array()) {
 	echo '<div class="gallery">';
 
 	echo '<div class="photo-container left">';

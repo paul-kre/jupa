@@ -18,9 +18,17 @@ strong, h3 {
 }
 
 h1 {
+    letter-spacing: 0.1rem;
     font-weight: 300;
     line-height: 3rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
+}
+
+h2 {
+    letter-spacing: 0.05rem;
+    font-weight: 300;
+    line-height: 3rem;
+    font-size: 1.8rem;
 }
 
 h3 {
@@ -28,7 +36,7 @@ h3 {
     margin: 0;
 }
 
-p, h1 {
+p, h1, h2 {
     margin: 0 0 2.5rem 0;
 }
 
@@ -86,7 +94,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 20px 30px;
+    padding: 32px 28px;
     width: 80px;
     cursor: pointer;
     z-index: 10;
@@ -127,14 +135,6 @@ header #logo .header-title .small {
     font-size: 1.1rem;
 }
 
-article.view {
-    position: relative;
-}
-
-section {
-    padding: 50px 200px 100px 50px;
-}
-
 .full-size {
     padding: 0;
     margin: 0;
@@ -153,31 +153,19 @@ section {
     transition: padding-left .5s ease;
 }
 
-.left-small {
-    width: 38%;
-    float: left;
-}
-
-.right-big {
-    width: 62%;
-    float: right;
-    padding: 50px 0 0 100px;
-}
-
 .text {
     line-height: 2.2rem;
 }
 
+.text p:last-child {
+    margin-bottom: 0;
+}
+
 .figure {
-    padding-top: 150%;
+    height: 100%;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.kontakt-text {
-    width: 260px;
-    margin: 50px auto;
 }
 
 .view a:link, .view a:visited {
@@ -193,14 +181,65 @@ section {
     border-bottom: solid 1px black;
 }
 
-.kontakt {
-    margin-bottom: 100px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+article.view {
+    position: relative;
+    padding-top: 80px;
 }
 
-.kontakt .figure {
-    padding-top: 80vh;
+.view section {
+    padding: 0 60px 80px;
 }
 
+.view section, #page-title {
+    max-width: 1400px;
+}
+
+.view section.text-mid {
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+.left-small {
+    width: 38%;
+    float: left;
+}
+
+.right-big {
+    width: 62%;
+    float: right;
+    padding-left: 80px;
+}
+
+.photo-and-text .right-big {
+    padding-top: 60px;
+}
+
+.left-small {
+    margin-bottom: 0;
+}
+
+.left-small .figure {
+    padding-top: 60vh;
+}
+
+.text.narrow {
+    width: 260px;
+    margin: 50px auto 0;
+}
 
 
 
@@ -297,15 +336,15 @@ nav {
 
 
 
-.gallery {
-    height: 80vh;
+.gallery, .big-photo {
+    height: 60vh;
 }
 .gallery .photo-container {
-    padding: 0 35px;
+    position: relative;
     height: 100%;
 }
 .gallery .photo-container.left {
-    width: 60%;
+    width: calc(60% - 30px);
     float: left;
 }
 .gallery .photo-container.right {
@@ -316,8 +355,16 @@ nav {
     background-size: contain;
 }
 .gallery .figure {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
+    width: 100%;
     padding: 0;
+    z-index: 1;
+}
+.gallery .figure.active {
+    z-index: 3;
 }
 
 
@@ -336,10 +383,10 @@ nav {
 
 
 #page-title {
-    width: calc(100% - 530px);
-    margin-left: 330px;
+    width: calc(100% - 400px);
+    margin-left: 340px;
     position: fixed;
-    top: 10px;
+    top: 23px;
     left: 0;
     text-align: center;
     overflow: hidden;
@@ -405,9 +452,6 @@ nav {
 
 
 
-
-
-
 @media (max-width: 1024px) {
     html {
         font-size: 90%;
@@ -437,8 +481,8 @@ nav {
         letter-spacing: 0.08rem;
         /*line-height: 2.2rem;*/
     }
-    section {
-        padding: 50px 25px 100px;
+    .view section, .view section.text-mid {
+        padding: 0 30px 80px;
     }
     #page-title {
         width: calc(100% - 100px);
@@ -458,8 +502,8 @@ nav {
         font-size: 1.4rem;
         line-height: 2.2rem;
     }
-    .gallery {
-        height: 50vh;
+    .gallery, .big-photo {
+        height: 40vh;
     }
 }
 

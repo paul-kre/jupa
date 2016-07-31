@@ -39,3 +39,48 @@ function makeClickableLinks($text) {
 	return preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $text);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function buildGallery($picA = '', $picB = '', $picArr = []) {
+	echo '<div class="gallery">';
+
+	echo '<div class="photo-container left">';
+	echo '<div style="background-image: url(\''.URL.'public/img/'.$picA.'.jpg\');" class="figure"></div>';
+	echo '</div>';
+	echo '<div class="photo-container right">';
+	echo '<div style="background-image: url(\''.URL.'public/img/'.$picB.'.jpg\');" class="figure active"></div>';
+	if(!empty($picArr)) {
+		foreach($picArr as $pic) {
+			echo '<div style="background-image: url(\''.URL.'public/img/'.$pic.'.jpg\');" class="figure"></div>';
+		}
+	}
+	echo '</div>';
+
+    echo '</div>';
+}

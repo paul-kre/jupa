@@ -2,8 +2,11 @@
 require_once LIB_PATH."initialize.php";
 global $activePage;
 
-//if($activePage->urlname == "home") includeLayoutTemplate("intro");
-if($activePage->urlname == "home") $activePage->nicename = "Kontakt & Konzept";
+if($activePage->urlname == "home") {
+    $activePage->nicename = "Kontakt & Konzept";
+    //includeLayoutTemplate("intro");
+}
+
 ?>
 
 

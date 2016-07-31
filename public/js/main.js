@@ -25,6 +25,8 @@ function init() {
 
     scroll();
     resize();
+
+    initGallery();
 }
 
 function resize(e) {

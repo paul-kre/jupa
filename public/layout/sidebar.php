@@ -1,10 +1,12 @@
 <?php
-require_once LIB_PATH."page.php";
+require_once LIB_PATH."initialize.php";
+
+
 
 function pageToLink($page) {
     global $activePage;
     echo '<a class="indented vertical-center'.($activePage->urlname == $page->urlname ? ' active' : '').'" href="'
-        .($page->enabled ? URL.$page->urlname : '#').'">';
+        .URL.($page->urlname == "ansichten" ? "aussen" : $page->urlname).'">';
     echo '<div class="vertical-el"><span>'.$page->nicename.'</span></div></a>';
 }
 

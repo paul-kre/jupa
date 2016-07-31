@@ -18,8 +18,8 @@ $title = TITLE.strip_tags(!empty($activePage->nicename) ? " / ".$activePage->nic
     <meta content="website" property="og:type">
     <meta content="<?php echo $description; ?>" property="og:description">
 
-    <meta content="<?php echo URL.substr($_SERVER["REQUEST_URI"], 1); ?>" property="og:url">
-    <meta content="<?php echo URL; ?>public/apple-touch-icon.png" property="og:image">
+    <!-- <meta content="" property="og:url"> -->
+    <meta content="<?php echo URL; ?>public/img/intro_background.jpg" property="og:image">
 
     <link href="<?php echo URL; ?>" rel="canonical" />
     <link rel="apple-touch-icon" href="<?php echo URL; ?>public/icon.png">
@@ -33,6 +33,7 @@ $title = TITLE.strip_tags(!empty($activePage->nicename) ? " / ".$activePage->nic
     <script src="<?php echo URL; ?>public/js/vendor/modernizr-custom.min.js"></script>
     <script src="<?php echo URL; ?>public/js/plugins.js"></script>
     <script src="<?php echo URL; ?>public/js/main.js"></script>
+    <script src="<?php echo URL; ?>public/js/gallery.js"></script>
 </head>
 <body>
     <!--[if lt IE 8]>

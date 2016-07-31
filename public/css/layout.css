@@ -104,22 +104,6 @@ body {
     transition: background .5s ease;
 }
 
-#sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 280px;
-    height: 100%;
-    background: rgb(168, 198, 212); /* light blue */
-    overflow: hidden;
-    z-index: 5;
-
-    -webkit-transition: left .5s ease;
-    -moz-transition: left .5s ease;
-    -o-transition: left .5s ease;
-    transition: left .5s ease;
-}
-
 header #logo {
     position: relative;
     width: 100%;
@@ -154,58 +138,6 @@ section {
 .full-size {
     padding: 0;
     margin: 0;
-}
-
-nav {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: calc(100vh - 190px);
-}
-
-.nav-main li {
-    border-top: 1px solid #353739;
-    position: relative;
-    height: 80px;
-    font-size: 1rem;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.nav-main li a {
-    height: 100%;
-    text-decoration: none;
-    color: rgb(168, 198, 212); /* light blue */
-    background: black;
-
-    -webkit-transition: color 0.5s, background-color 0.5s;
-    -moz-transition: color 0.5s, background-color 0.5s;
-    transition: color 0.5s, background-color 0.5s
-}
-
-.nav-main li a:hover, .nav-main li a.active {
-    background: #222;
-}
-
-.nav-main ul li {
-    border-top: 1px solid rgb(148, 176, 188); /* midtone blue */
-}
-
-.nav-main li ul li a {
-    background: rgb(168, 198, 212); /* light blue */
-    color: #666;
-}
-
-.nav-main li ul li a:hover, .nav-main li ul li a.active {
-    background: rgb(148, 176, 188); /* midtone blue */
-}
-
-.nav-main .small {
-    font-size: .67rem;
-    text-transform: none;
-}
-
-.nav-main li ul li:last-child {
-    border-bottom: 1px solid rgb(148, 176, 188); /* midtone blue */
 }
 
 #sidebar .indented {
@@ -268,6 +200,94 @@ nav {
 .kontakt .figure {
     padding-top: 80vh;
 }
+
+
+
+
+
+
+
+
+
+
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background: rgb(168, 198, 212); /* light blue */
+    overflow: hidden;
+    z-index: 5;
+
+    -webkit-transition: left .5s ease;
+    -moz-transition: left .5s ease;
+    -o-transition: left .5s ease;
+    transition: left .5s ease;
+}
+
+nav {
+
+}
+
+.nav-main li {
+    border-top: 1px solid #353739;
+    position: relative;
+    height: 80px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.nav-main li a {
+    height: 100%;
+    text-decoration: none;
+    color: rgb(168, 198, 212); /* light blue */
+    background: black;
+
+    -webkit-transition: color 0.5s, background-color 0.5s;
+    -moz-transition: color 0.5s, background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s
+}
+
+.nav-main li a:hover, .nav-main li a.active {
+    background: #222;
+}
+
+.nav-main ul li {
+    border-top: 1px solid rgb(148, 176, 188); /* midtone blue */
+}
+
+.nav-main li ul li a {
+    background: rgb(168, 198, 212); /* light blue */
+    color: #666;
+}
+
+.nav-main li ul {
+    height: calc(100vh - 340px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.nav-main li ul li a:hover, .nav-main li ul li a.active {
+    background: rgb(148, 176, 188); /* midtone blue */
+}
+
+.nav-main .small {
+    font-size: .67rem;
+    text-transform: none;
+}
+
+.nav-main li ul li:last-child {
+    border-bottom: 1px solid rgb(148, 176, 188); /* midtone blue */
+}
+
+
+
+
+
+
 
 
 

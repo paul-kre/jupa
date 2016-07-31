@@ -201,16 +201,12 @@ article.view {
 }
 
 .view section {
-    padding: 0 60px 80px;
-}
-
-.view section, #page-title {
-    max-width: 1400px;
+    padding: 0 60px 120px;
 }
 
 .view section.text-mid {
-    padding-left: 180px;
-    padding-right: 180px;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .left-small {
@@ -230,10 +226,6 @@ article.view {
 
 .left-small {
     margin-bottom: 0;
-}
-
-.left-small .figure {
-    padding-top: 60vh;
 }
 
 .text.narrow {
@@ -336,8 +328,8 @@ nav {
 
 
 
-.gallery, .big-photo {
-    height: 60vh;
+.gallery, .big-photo, .left-small .figure {
+    height: 90vh;
 }
 .gallery .photo-container {
     position: relative;
@@ -452,6 +444,11 @@ nav {
 
 
 
+@media (max-width: 1450px) {
+    .gallery, .big-photo, .left-small .figure {
+        height: 60vh;
+    }
+}
 @media (max-width: 1024px) {
     html {
         font-size: 90%;
@@ -481,8 +478,12 @@ nav {
         letter-spacing: 0.08rem;
         /*line-height: 2.2rem;*/
     }
-    .view section, .view section.text-mid {
-        padding: 0 30px 80px;
+    .view section {
+        padding: 0 30px 120px;
+
+    }
+    .view section.text-mid {
+        width: 90%;
     }
     #page-title {
         width: calc(100% - 100px);
@@ -503,7 +504,7 @@ nav {
         line-height: 2.2rem;
     }
     .gallery, .big-photo {
-        height: 40vh;
+
     }
 }
 

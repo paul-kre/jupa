@@ -7,7 +7,7 @@
         </div>
         <div class="right-big">
             <div class="text">
-                <h1 style="margin-bottom: 2em">Schlichte Ästhetik.</h1>
+                <h1>Schlichte Ästhetik.</h1>
                 <p>
                     Das Außen ist mehr als die Haut eines Gebäudes, es sollte mit der Umgebung ebenso korrespondieren wie mit dem Innenleben. Diese Pole in Verbindung zu bringen, beeinflusst den Entwurf von Um- oder Ausbauten, Sanierungen wesentlich. Dabei ist eine schlichte Ästhetik, geschaffen mit dauerhaften Materialien, eine Qualität, die dem Betrachter beim ersten Anblick des Wohn- oder Geschäftshauses unmittelbar sichtbar werden sollten. Sie prägt deren Wert. Selbstverständliche Grundlage meiner Arbeit ist die Berücksichtigung einer sinnvollen Relation zwischen Kosten und Nutzen.
                 </p>

@@ -155,15 +155,20 @@ header #logo .header-title .small {
 
 
 
-
+.no-js #intro {
+    display: none;
+}
 
 #intro {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-position: 33% 50%;
     background-size: cover;
     z-index: 20;
+    cursor: pointer;
 }
 
 #intro .intro-text {
@@ -172,16 +177,16 @@ header #logo .header-title .small {
     bottom: 180px;
     max-width: 80%;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
     line-height: 3rem;
     letter-spacing: 0.25rem;
 }
 
 #intro .intro-text h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 
 #intro .intro-text .intro-logo {

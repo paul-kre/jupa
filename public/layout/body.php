@@ -4,7 +4,7 @@ global $activePage;
 
 if($activePage->urlname == "home") {
     $activePage->nicename = "Kontakt & Konzept";
-    //includeLayoutTemplate("intro");
+    includeLayoutTemplate("intro");
 }
 
 ?>

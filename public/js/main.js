@@ -1,20 +1,21 @@
 // elements
-var sidebar, intro, mainContent, menuButton;
+var $sidebar, $mainContent, $menuButton, $intro;
 
 // booleans
-var sidebarEnabled, introVisible;
+var sidebarEnabled, introVisible = false;
 
 // colors
 var LIGHT_BLUE = "rgb(168, 198, 212)";
 
 function init() {
-    sidebar = $("#sidebar");
-    mainContent = $("#main-content");
-    menuButton = $("#menu-button");
+    $sidebar = $("#sidebar");
+    $mainContent = $("#main-content");
+    $menuButton = $("#menu-button");
+    $intro  = $("#intro");
 
-    initIntro();
+    if($intro.length) initIntro();
 
-    menuButton.click(toggleSidebar);
+    $menuButton.click(toggle$sidebar);
 
     window.onwheel = scroll; // modern standard
     window.onscroll = scroll; // modern standard
@@ -23,67 +24,65 @@ function init() {
 
     window.onresize = resize;
 
-    scroll();
     resize();
 
     initGallery();
 }
 
+function initIntro() {
+    $mainContent.hide();
+    introVisible = true;
+    $intro.click(hideIntro);
+}
+
+function hideIntro() {
+    $mainContent.show();
+    $intro.animate({
+        height: 0,
+        opacity: .2
+    }, 500, "easeInQuad", function() {
+        $intro.hide();
+        introVisible = false;
+    });
+
+}
+
 function resize(e) {
     if(window.innerWidth < 1024) {
-        hideSidebar();
-        menuButton.show();
+        hide$sidebar();
+        $menuButton.show();
     } else {
-        showSidebar();
-        menuButton.hide();
+        show$sidebar();
+        $menuButton.hide();
     }
 }
 
-function toggleSidebar() {
-    if(sidebarEnabled) hideSidebar();
-    else showSidebar();
+function toggle$sidebar() {
+    if(sidebarEnabled) hide$sidebar();
+    else show$sidebar();
 }
 
-function hideSidebar() {
-    sidebar.css("left", "-100%");
-    mainContent.css("padding-left", 0);
+function hide$sidebar() {
+    $sidebar.css("left", "-100%");
+    $mainContent.css("padding-left", 0);
 
-    menuButton.children().css("background", "black");
+    $menuButton.children().css("background", "black");
 
     sidebarEnabled = false;
 }
 
-function showSidebar() {
-    sidebar.css("left", "");
-    mainContent.css("padding-left", "");
+function show$sidebar() {
+    $sidebar.css("left", "");
+    $mainContent.css("padding-left", "");
 
-    menuButton.children().css("background", LIGHT_BLUE);
+    $menuButton.children().css("background", LIGHT_BLUE);
 
 
     sidebarEnabled = true;
 }
 
 function scroll(e) {
-    updateIntro();
-}
-
-
-
-function initIntro() {
-    intro = document.querySelector("#intro");
-    introVisible = intro != null;
-    if(introVisible) sidebar.css("position", "absolute");
-}
-
-function updateIntro() {
-    if(introVisible) {
-        if(window.scrollY > window.innerHeight) {
-            //sidebar.style.position = "fixed";
-            sidebar.css("position", "fixed");
-            intro.style.display = "none";
-            introVisible = false;
-        } else sidebar.css("position", "absolute");
-    }
+    if(introVisible) hideIntro();
 }
 
 document.addEventListener("DOMContentLoaded", init, false);

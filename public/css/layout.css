@@ -224,6 +224,10 @@ article.view {
     padding-top: 60px;
 }
 
+.photo-and-text .photo-container {
+    position: relative;
+}
+
 .left-small {
     margin-bottom: 0;
 }
@@ -267,7 +271,7 @@ nav {
     position: relative;
     height: 80px;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
 }
 
@@ -328,8 +332,8 @@ nav {
 
 
 
-.gallery, .big-photo, .left-small .figure {
-    height: 90vh;
+.gallery, .big-photo, .photo-and-text .photo-container {
+    height: 80vh;
 }
 .gallery .photo-container {
     position: relative;
@@ -343,19 +347,22 @@ nav {
     width: 40%;
     float: right;
 }
-.gallery .photo-container.right > .figure {
+.gallery .photo-container.right .figure {
     background-size: contain;
 }
 .gallery .figure {
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 100%;
     padding: 0;
+}
+.photo-blend .figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1;
 }
-.gallery .figure.active {
+.photo-blend .figure.active {
     z-index: 3;
 }
 
@@ -382,7 +389,7 @@ nav {
     left: 0;
     text-align: center;
     overflow: hidden;
-    z-index: 2;
+    z-index: 5;
 
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
@@ -445,7 +452,7 @@ nav {
 
 
 @media (max-width: 1450px) {
-    .gallery, .big-photo, .left-small .figure {
+    .gallery, .big-photo, .photo-and-text .photo-container {
         height: 60vh;
     }
 }

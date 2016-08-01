@@ -3,7 +3,9 @@
 <section>
     <div class="photo-and-text">
         <div class="left-small">
-            <div class="figure" style="background-image: url('<?php echo URL; ?>public/img/portrait.jpg');"></div>
+            <div class="photo-container">
+                <div class="figure" style="background-image: url('<?php echo URL; ?>public/img/portrait.jpg');"></div>
+            </div>
             <div class="text narrow">
                 <p>
                     Julia Paschos<br>

@@ -3,7 +3,7 @@ var TIMEOUT = 4000;
 var FADETIME = 2000;
 
 function initGallery() {
-    $gallery = $('.gallery .photo-container.right');
+    $gallery = $('.photo-blend');
     setInterval(cycleGallery, TIMEOUT);
 }
 

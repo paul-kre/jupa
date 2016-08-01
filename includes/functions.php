@@ -74,12 +74,14 @@ function buildGallery($picA = '', $picB = '', $picArr = array()) {
 	echo '<div style="background-image: url(\''.URL.'public/img/'.$picA.'.jpg\');" class="figure"></div>';
 	echo '</div>';
 	echo '<div class="photo-container right">';
+	echo '<div class="photo-blend">';
 	echo '<div style="background-image: url(\''.URL.'public/img/'.$picB.'.jpg\');" class="figure active"></div>';
 	if(!empty($picArr)) {
 		foreach($picArr as $pic) {
 			echo '<div style="background-image: url(\''.URL.'public/img/'.$pic.'.jpg\');" class="figure"></div>';
 		}
 	}
+	echo '</div>';
 	echo '</div>';
 
     echo '</div>';

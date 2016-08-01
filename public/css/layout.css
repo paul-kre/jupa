@@ -174,7 +174,7 @@ header #logo .header-title .small {
 #intro .intro-text {
     position: absolute;
     left: 10%;
-    bottom: 180px;
+    bottom: 15%;
     max-width: 80%;
     color: white;
     font-size: 2rem;

@@ -470,11 +470,6 @@ nav {
 
 
 
-@media (max-width: 1450px) {
-    .gallery, .big-photo, .photo-and-text .photo-container {
-        height: 60vh;
-    }
-}
 @media (max-width: 1024px) {
     html {
         font-size: 90%;

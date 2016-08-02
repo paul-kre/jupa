@@ -32,6 +32,7 @@ $title = TITLE.strip_tags(!empty($activePage->nicename) ? " / ".$activePage->nic
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/layout.css">
     <script src="<?php echo URL; ?>public/js/vendor/modernizr-custom.min.js"></script>
     <script src="<?php echo URL; ?>public/js/plugins.js"></script>
+    <script src="<?php echo URL; ?>public/js/infiniteScroll.js"></script>
     <script src="<?php echo URL; ?>public/js/main.js"></script>
     <script src="<?php echo URL; ?>public/js/gallery.js"></script>
 </head>

@@ -14,8 +14,9 @@ function formatPages($pages, $class='') {
     if(!$pages) return;
     echo '<ul'.(!empty($class) ? ' class="'.$class.'"' : '' ).'>';
     foreach($pages as $page) {
-        echo '<li>';
+        echo '<li name="'.$page->urlname.'">';
         pageToLink($page);
+        echo '<span class="progress-bar"></span>';
         $subPages = $page->findChildren();
         formatPages($subPages);
         echo '</li>';

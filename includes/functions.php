@@ -29,9 +29,8 @@ function includeLayoutTemplate($template = "") {
 	if(file_exists($filePath)) include $filePath;
 }
 
-function includePage($page = "") {
-	$filePath = SITE_ROOT."public".DS."page".DS.$page.".php";
-	if(file_exists($filePath)) include $filePath;
+function getPage() {
+	include SITE_ROOT."public".DS."getPage.php";
 }
 
 function makeClickableLinks($text) {

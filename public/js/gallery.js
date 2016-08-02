@@ -1,14 +1,12 @@
-var $gallery;
 var TIMEOUT = 4000;
 var FADETIME = 2000;
 
 function initGallery() {
-    $gallery = $('.photo-blend');
     setInterval(cycleGallery, TIMEOUT);
 }
 
 function cycleGallery() {
-    $gallery.each(function() {
+    $('.photo-blend').each(function() {
         if($(this).children().length > 1) {
             var $active = $(this).find('.active');
             var $next = ($active.next().length > 0) ? $active.next() : $(this).find('.figure:first');

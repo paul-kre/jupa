@@ -8,7 +8,7 @@
             -->
             <span>
                 <h1>Julia <strong>Paschos</strong></h1>
-                Architektur und Innenarchitektur<br>
+                Architektur & Innenarchitektur<br>
                 Gestaltung vom Raum im Detail.
             </span>
 

@@ -63,7 +63,7 @@ body {
     padding: 32px 28px;
     width: 80px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 15;
 }
 
 #menu-button div {
@@ -273,7 +273,7 @@ article.view {
     height: 100%;
     background: rgb(168, 198, 212); /* light blue */
     overflow: hidden;
-    z-index: 5;
+    z-index: 10;
 
     -webkit-transition: left .5s ease;
     -moz-transition: left .5s ease;

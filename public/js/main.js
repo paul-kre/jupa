@@ -15,7 +15,7 @@ function init() {
 
     if($intro.length) initIntro();
 
-    $menuButton.click(toggle$sidebar);
+    $menuButton.click(toggleSidebar);
 
     window.onwheel = scroll; // modern standard
     window.onscroll = scroll; // modern standard
@@ -49,34 +49,37 @@ function hideIntro() {
 
 function resize(e) {
     if(window.innerWidth < 1024) {
-        hide$sidebar();
+        hideSidebar();
         $menuButton.show();
     } else {
-        show$sidebar();
+        showSidebar();
         $menuButton.hide();
     }
 }
 
-function toggle$sidebar() {
-    if(sidebarEnabled) hide$sidebar();
-    else show$sidebar();
+function toggleSidebar() {
+    if(sidebarEnabled) hideSidebar();
+    else showSidebar();
 }
 
-function hide$sidebar() {
+function hideSidebar() {
     $sidebar.css("left", "-100%");
     $mainContent.css("padding-left", 0);
 
     $menuButton.children().css("background", "black");
+    
+    $('#main-content').removeClass("sidebar-enabled");
 
     sidebarEnabled = false;
 }
 
-function show$sidebar() {
+function showSidebar() {
     $sidebar.css("left", "");
     $mainContent.css("padding-left", "");
 
     $menuButton.children().css("background", LIGHT_BLUE);
 
+    $('#main-content').addClass("sidebar-enabled");
 
     sidebarEnabled = true;
 }

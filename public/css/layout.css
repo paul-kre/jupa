@@ -436,10 +436,10 @@ nav {
     z-index: 5;
 
     /*
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
+    -webkit-transition: margin-left .5s ease;
+    -moz-transition: margin-left .5s ease;
+    -o-transition: margin-left .5s ease;
+    transition: margin-left .5s ease;
     */
 }
 
@@ -544,6 +544,10 @@ nav {
     .page-title.active {
         width: calc(100% - 110px);
         margin-left: 80px;
+    }
+    .sidebar-enabled .page-title.active {
+        width: calc(100% - 300px);
+        margin-left: 270px;
     }
     .gallery .photo-container {
         padding: 0 5px;

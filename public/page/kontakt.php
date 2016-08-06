@@ -32,7 +32,6 @@
                     Eine Idee für Ihr Haus, mit dessen Innen- und Außenräumen zu entwickeln, bildet den Anfang meiner Arbeit. Sie verbindet sich mit Ihren Wünschen und Vorstellungen, die ich im Gespräch kennenlerne, damit alles in einem konsequenten Entwurf zusammenfließt.<br>
                     Es kann die sensible Modernisierung von Bestandsgebäuden und deren Details sein, der Neubau oder Umbau – es gibt keine kleinen oder großen Aufgaben.
                 </p>
-                <p><a href="#">Kontakt</a></p>
                 <p>
                     Das Verhältnis von natürlichem und künstlichem Licht, die Wahl der Materialien und die Umsetzung durch ausgewählte Handwerker sind für mich Kennzeichen gelungener Architektur sowohl im Wohnhaus, der Praxis oder der Gewerbeeinheit mit Büro oder Ladenfläche.
                 </p>
@@ -66,17 +65,17 @@
 
             <h3>Konzept & Gestaltung & Realisierung der Website</h3>
             <p>
-                <a href="#" target="_blank">keydesigns Borgmann Durrie GbR</a>
+                <a href="http://keydesigns.de/" target="_blank">keydesigns Borgmann Durrie GbR</a>
             </p>
 
             <h3>Fotografie</h3>
             <p>
-                <a href="#" target="_blank">Tania Walck</a>
+                <a href="http://taniawalck.de/" target="_blank">Tania Walck</a>
             </p>
 
             <h3>Text</h3>
             <p>
-                <a href="#" target="_blank">Elisabeth Schönert</a>
+                Elisabeth Schönert
             </p>
 
             <h3>Copyright und Urheberrecht</h3>

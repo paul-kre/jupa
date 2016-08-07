@@ -181,6 +181,8 @@ header #logo .header-title .small {
     font-weight: 300;
     line-height: 3rem;
     letter-spacing: 0.25rem;
+    padding: 30px;
+    background-color: rgba(0,0,0,.5);
 }
 
 #intro .intro-text h1 {
@@ -563,6 +565,14 @@ nav {
         font-size: 1.4rem;
         line-height: 2.2rem;
     }
+
+    #intro .intro-text {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: none;
+    }
+
     .gallery, .big-photo {
 
     }

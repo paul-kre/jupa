@@ -2,7 +2,7 @@
 global $activePage;
 $description = !empty($activePage->description) ? utf8_encode($activePage->description) : DESCRIPTION;
 $keywords = !empty($activePage->keywords) ? utf8_encode($activePage->keywords) : KEYWORDS;
-$title = TITLE.". ".strip_tags(!empty($activePage->nicename) ? $activePage->nicename : 'Architektur Innenarchitektur Düsseldorf');
+$title = TITLE.". ".(!empty($activePage->nicename) ? ucfirst(strip_tags($activePage->nicename)) : 'Architektur Innenarchitektur Düsseldorf');
 $pageUrl = URL.($activePage->urlname != 'home' ? $activePage->urlname : '');
 ?>
 

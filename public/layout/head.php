@@ -22,8 +22,6 @@ $pageUrl = URL.($activePage->urlname != 'home' ? $activePage->urlname : '');
     <meta content="website" property="og:type">
     <meta content="<?php echo $pageUrl; ?>" property="og:url">
     <meta content="<?php echo $description; ?>" property="og:description">
-
-    <!-- <meta content="" property="og:url"> -->
     <meta content="<?php echo URL; ?>public/img/intro_background.jpg" property="og:image">
 
     <link href="<?php echo URL; ?>" rel="canonical" />

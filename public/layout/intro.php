@@ -1,4 +1,4 @@
-<div id="intro" style="background-image: url('<?php echo URL; ?>public/img/intro_background.jpg')">
+<div id="intro" style="background-image: url('<?php echo URL; ?>public/img/intro_background.jpg'); cursor: url('<?php echo URL; ?>public/img/arrow_cursor.png'), auto;">
     <div class="intro-text">
         <div class="relative">
             <!--
@@ -7,9 +7,12 @@
             </div>
             -->
             <span>
-                <h1>Julia <strong>Paschos</strong></h1>
+                <h1>
+                    Julia<strong>Paschos</strong><br>
+                    <span class="sub-title">Dipl. Ing. Architektur</span>
+                </h1>
                 Architektur & Innenarchitektur<br>
-                Gestaltung vom Raum im Detail.
+                Raum gestalten im Detail.
             </span>
 
         </div>

@@ -9,6 +9,7 @@ CREATE TABLE page (
 	parent VARCHAR(50),
 	nicename VARCHAR(80),
 	description VARCHAR(255),
+	keywords VARCHAR(255),
 	position INT(8),
 	enabled BOOLEAN DEFAULT TRUE,
 	PRIMARY KEY (urlname),

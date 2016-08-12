@@ -9,7 +9,7 @@
             <div class="text narrow">
                 <p>
                     Julia Paschos<br>
-                    Dipl. Ing. Architektur (RWTH)<br>
+                    Dipl. Ing. Architektur (RWTH)<br><br>
                     <a href="https://goo.gl/maps/p1t4FBMhwzN2" target="_blank">
                         Leostraße. 89<br>
                         40545 Düsseldorf

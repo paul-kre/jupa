@@ -173,22 +173,32 @@ header #logo .header-title .small {
 
 #intro .intro-text {
     position: absolute;
-    left: 10%;
-    bottom: 15%;
-    max-width: 80%;
+    left: 0;
+    bottom: 10%;
+    width: 100%;
     color: white;
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-weight: 300;
-    line-height: 3rem;
+    line-height: 3.5rem;
     letter-spacing: 0.25rem;
-    padding: 30px;
-    background-color: rgba(0,0,0,.5);
+    padding: 20px 10%;
+    background-color: rgba(0,0,0,.4);
+
+    font-weight: 400;
 }
 
 #intro .intro-text h1 {
-    font-size: 2rem;
+    letter-spacing: inherit;
+    font-size: inherit;
+    line-height: 2rem;
     text-transform: uppercase;
     margin-bottom: .5rem;
+    font-weight: 300;
+}
+
+#intro .intro-text .sub-title {
+    font-size: .67em;
+    text-transform: none;
 }
 
 #intro .intro-text .intro-logo {
@@ -529,11 +539,12 @@ nav {
         padding: 0;
     }
 
-    #intro .intro-text, #intro .intro-text h1 {
+    #intro .intro-text {
         font-size: 2rem;
         letter-spacing: 0.08rem;
         /*line-height: 2.2rem;*/
     }
+
     .view section, .view section.text-mid {
         width: auto;
         margin: 0;
@@ -554,6 +565,18 @@ nav {
     .gallery .photo-container {
         padding: 0 5px;
     }
+
+
+    .gallery .photo-container.right, .gallery .photo-container.left {
+        clear: both;
+        width: 100%;
+    }
+    .gallery .photo-container.left {
+        margin-bottom: 30px;
+    }
+    .gallery .photo-container.right {
+        height: 50%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -561,16 +584,14 @@ nav {
         font-size: 85%;
     }
 
-    #intro .intro-text, #intro .intro-text h1 {
+    #intro .intro-text {
         font-size: 1.4rem;
         line-height: 2.2rem;
+        bottom: 0;
     }
 
-    #intro .intro-text {
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        max-width: none;
+    #intro .intro-text h1 {
+
     }
 
     .gallery, .big-photo {

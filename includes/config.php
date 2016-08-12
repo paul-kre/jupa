@@ -3,8 +3,8 @@
 // General Constants
 defined('URL') ? null : define('URL', 'http://localhost/juliapaschos/');
 defined('TITLE') ? null : define('TITLE', 'JULIA PASCHOS');
-defined('DESCRIPTION') ? null : define('DESCRIPTION', 'Julia Paschos ist eine Architektin.');
-defined('KEYWORDS') ? null : define('KEYWORDS', 'Architektur,Innenarchitektur,Design,Julia,Paschos');
+defined('DESCRIPTION') ? null : define('DESCRIPTION', 'JULIA PASCHOS entwickelt Ideen für Ihre Innen- und Außenräume. Ihre Wünsche und Vorstellungen fließen in den Entwurf ein.');
+defined('KEYWORDS') ? null : define('KEYWORDS', 'Modernisierung, Neubau, Umbau, im Gespräch mit Julia Paschos, Architektur und Innenarchitektur bis ins Detail, Düsseldorf');
 
 // Database Constants
 defined("DB_SERVER") ? null : define("DB_SERVER", "localhost");

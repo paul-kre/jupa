@@ -1,7 +1,9 @@
 <?php
 global $activePage;
-$description = !empty($activePage->description) ? $activePage->description : DESCRIPTION;
-$title = TITLE.strip_tags(!empty($activePage->nicename) ? " / ".$activePage->nicename : null);
+$description = !empty($activePage->description) ? utf8_encode($activePage->description) : DESCRIPTION;
+$keywords = !empty($activePage->keywords) ? utf8_encode($activePage->keywords) : KEYWORDS;
+$title = TITLE.". ".strip_tags(!empty($activePage->nicename) ? $activePage->nicename : 'Architektur Innenarchitektur Düsseldorf');
+$pageUrl = URL.($activePage->urlname != 'home' ? $activePage->urlname : '');
 ?>
 
 <!doctype html>
@@ -10,12 +12,15 @@ $title = TITLE.strip_tags(!empty($activePage->nicename) ? " / ".$activePage->nic
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php echo $title; ?></title>
+    <meta name="copyright" content="Borgmann Durrie GbR, 2016. All rights reserverd.">
+    <meta name="author" content="Borgmann Durrie GbR">
     <meta content="<?php echo $description; ?>" name="description">
-    <meta content="<?php echo KEYWORDS; ?>" name="keywords">
+    <meta content="<?php echo $keywords; ?>" name="keywords">
     <meta content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1" name="viewport">
 
     <meta content="<?php echo $title; ?>" property="og:title">
     <meta content="website" property="og:type">
+    <meta content="<?php echo $pageUrl; ?>" property="og:url">
     <meta content="<?php echo $description; ?>" property="og:description">
 
     <!-- <meta content="" property="og:url"> -->

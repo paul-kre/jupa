@@ -4,11 +4,12 @@ require_once(LIB_PATH."database_object.php");
 
 class Page extends DatabaseObject {
     protected static $tableName = "page";
-    protected static $dbFields = array("urlname", "parent", "nicename", "description", "position", "enabled");
+    protected static $dbFields = array("urlname", "parent", "nicename", "description", "keywords", "position", "enabled");
     public $urlname="";
     public $parent="";
     public $nicename="";
     public $description="";
+    public $keywords="";
     public $position;
     public $enabled;
 

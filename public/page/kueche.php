@@ -40,7 +40,3 @@
         <div style="background-image: url('<?php echo URL; ?>public/img/kitchen_02.jpg');" class="figure"></div>
     </div>
 </section>
-
-<section class="full-size">
-    <?php buildGallery("kitchen_03", "kitchen_04"); ?>
-</section>

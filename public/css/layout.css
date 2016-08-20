@@ -177,7 +177,7 @@ header #logo .header-title .small {
     bottom: 10%;
     width: 100%;
     color: white;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     font-weight: 300;
     line-height: 3.5rem;
     letter-spacing: 0.25rem;
@@ -189,7 +189,7 @@ header #logo .header-title .small {
 
 #intro .intro-text h1 {
     letter-spacing: inherit;
-    font-size: inherit;
+    font-size: 1.5em;
     line-height: 2rem;
     text-transform: uppercase;
     margin-bottom: .5rem;
@@ -197,7 +197,7 @@ header #logo .header-title .small {
 }
 
 #intro .intro-text .sub-title {
-    font-size: .67em;
+    font-size: .5em;
     text-transform: none;
 }
 

@@ -597,6 +597,10 @@ nav {
     .gallery, .big-photo {
 
     }
+
+    .mobile-hide {
+        display: none;
+    }
 }
 
 

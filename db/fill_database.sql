@@ -11,7 +11,7 @@ INSERT INTO page (urlname, nicename, enabled, position)
 
 
 INSERT INTO page (urlname, nicename, parent, position)
-	VALUES ('aussen', '<span class="small">vom</span> Aussen', 'ansichten', 0);
+	VALUES ('aussen', '<span class="small">vom</span> Au&szlig;en', 'ansichten', 0);
 
 INSERT INTO page (urlname, nicename, parent, position)
 	VALUES ('innen', '<span class="small">zum</span> Innen', 'ansichten', 10);

@@ -31,7 +31,7 @@
 <section class="text-mid">
     <h2>Raumproportionen als Gestaltungselement.</h2>
     <p>
-        Die Symmetrie des Raumes wollte ich durch die Möblierung der Küche aufgreifen. Häufig werden Nischen und Ecken als Stauräume genutzt, doch hier sollten diese gerade frei bleiben, damit die Strenge der Raumproportion nicht verwischt wird. Stattdessen werden sie betont, indem die Achse der Küche sich an den mittig angeordneten Fenstern ausrichtet, die sich wiederum im zentral positionierten Küchenblock spiegelt.
+        Die Symmetrie des Raumes wird durch die Möblierung der Küche aufgegriffen. Häufig werden Nischen und Ecken als Stauräume genutzt, doch hier sollten diese gerade frei bleiben, damit die Strenge der Raumproportion nicht verwischt wird. Stattdessen werden sie betont, indem die Achse der Küche sich an den mittig angeordneten Fenstern ausrichtet, die sich wiederum im zentral positionierten Küchenblock spiegelt.
     </p>
 </section>
 

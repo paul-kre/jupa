@@ -11,7 +11,7 @@
             <div class="text">
                 <h1>Schlichte Ästhetik.</h1>
                 <p>
-                    Das Außen ist mehr als die Haut eines Gebäudes, es sollte mit der Umgebung ebenso korrespondieren wie mit dem Innenleben. Diese Pole in Verbindung zu bringen, beeinflusst den Entwurf von Um- oder Ausbauten, Sanierungen wesentlich. Dabei ist eine schlichte Ästhetik, geschaffen mit dauerhaften Materialien, eine Qualität, die dem Betrachter beim ersten Anblick des Wohn- oder Geschäftshauses unmittelbar sichtbar werden sollten. Sie prägt deren Wert. Selbstverständliche Grundlage meiner Arbeit ist die Berücksichtigung einer sinnvollen Relation zwischen Kosten und Nutzen.
+                    Das Außen ist mehr als die Haut eines Gebäudes, es sollte mit der Umgebung ebenso korrespondieren wie mit dem Innenleben. <span class="mobile-hide">Diese Pole in Verbindung zu bringen, beeinflusst den Entwurf von Sanierungen, Um- oder Ausbauten wesentlich. </span>Dabei ist eine schlichte Ästhetik, geschaffen mit dauerhaften Materialien, eine Qualität, die dem Betrachter beim ersten Anblick des Wohn- oder Geschäftshauses unmittelbar sichtbar werden sollten. Sie prägt deren Wert. Selbstverständliche Grundlage meiner Arbeit ist die Berücksichtigung einer sinnvollen Relation zwischen Kosten und Nutzen.
                 </p>
             </div>
         </div>
@@ -22,14 +22,14 @@
     <p>
         Jedes Haus ist in eine ganz eigene Umgebung eingebettet. Bei der Planung eines Umbaus oder der Sanierung der Fassade betrachte ich den gesamten Straßenzug, nehme die angrenzenden Häuser wahr, deren Formen und Materialien.
     </p>
-    <p>
+    <p class="mobile-hide">
         Dann kehre ich zu dem Bauprojekt zurück: Was ist an der Bausubstanz erhaltenswert? Was erinnert am Gebäude an die Umgebung? Was harmoniert mit ihr? Welche Elemente dürfen am Haus entfernt oder verändert werden?
     </p>
     <p>
-        Es können Fassadendetails sein, die ein neues Bild des Hauses entstehen lassen. Die Vereinheitlichung der Fensterformate führt zu neuer Harmonie. Manchmal ist es ein kleines Detail des Altbaus, das den Ausschlag gibt für die Sanierung: Es kann das alte, schwarze Fugenmaterial des Backsteinmauerwerks sein, das in der modernen Fassadengestaltung in schwarz gestrichenen Fenstern und Gaube weitergeführt wird.
+        Es können Fassadendetails sein, die ein neues Bild des Hauses entstehen lassen. <span class="mobile-hide">Die Vereinheitlichung der Fensterformate führt zu neuer Harmonie. </span>Manchmal ist es ein kleines Detail des Altbaus, das den Ausschlag gibt für die Sanierung: Es kann das alte, schwarze Fugenmaterial des Backsteinmauerwerks sein, welches in der modernen Fassadengestaltung in schwarz gestrichenen Fenstern und der Gaube weitergeführt wird.
     </p>
     <p>
-        Die alte Tür fügt sich durch einen schwarzen Anstrich nun ins Bild. Sie muss aufgearbeitet – der Türgriff aus Messing gibt das Material für das Sicherheitsschloss und die Gegensprechanlage vor. Durch den Kontrast des Backsteingemäuers mit den schwarzen Elementen entsteht eine Kombination aus Vergangenheit und Moderne. Das ist für mich ein Beispiel sensibler Sanierung.
+        Die alte Tür fügt sich durch einen schwarzen Anstrich nun ins Bild<span class="mobile-hide"> – der Türgriff aus Messing gibt das Material für das Sicherheitsschloss und die Gegensprechanlage vor</span>. Durch den Kontrast des Backsteingemäuers mit den schwarzen Elementen entsteht eine Kombination aus Vergangenheit und Moderne. Das ist für mich ein Beispiel sensibler Sanierung.
     </p>
 </section>
 <section class="full-size">
@@ -41,7 +41,7 @@
         Ich möchte die Identität des Hauses finden, welche sich dann in der Fassade als auch im Grundriss widerspiegelt und die sich in die äußere Umgebung des Hauses einfügt. Jeder Besucher sollte diese Idee beim Betreten des Hauses erfassen können.
     </p>
     <p>
-        Es muss nicht immer ein komplettes Haus sein, das neu gebaut wird. Es kann auch nur ein Element wie eine Treppe hinab in den Garten sein. Zur Überbrückung von großen Höhen, ist eine Wendeltreppe die eleganteste Form der Treppe. Sie sollte leicht wirken, welches in diesem Beispiel durch das Stabgeländer unterstützt wird, das direkt in den Stufen angebracht ist und nicht noch einmal - wie sonst üblich - unterteilt ist. Die Stufen aus Lochblech sind nicht nur rutschsicher, sondern man mag sie auch gerne mit bloßen Füssen betreten, wenn man in den Garten hinabsteigt.
+        Es muss nicht immer ein komplettes Haus sein, das neu gebaut wird. Es kann auch nur ein Element wie eine Treppe hinab in den Garten sein. <span class="mobile-hide">Ist ein großer Höhenunterschied zu überbrücken, ist eine Wendeltreppe die  die eleganteste Form der Treppe. </span>Sie sollte leicht wirken, welches in diesem Beispiel durch das Stabgeländer unterstützt wird, das direkt in den Stufen angebracht ist und nicht noch einmal - wie sonst üblich - unterteilt ist. <span class="mobile-hide">Die Stufen aus Lochblech sind nicht nur rutschsicher, sondern man mag sie auch gerne mit bloßen Füssen betreten, steigt man in  den Garten hinab.</span>
     </p>
 </section>
 <section class="full-size">
@@ -64,7 +64,7 @@
 <section class="text-mid">
     <h2>Dachausbau: Raum schaffen</h2>
     <p>
-        ... und dem Himmel ganz nah sein. Die Erschließung des Dachraumes schafft nicht nur zusätzliche Wohnfläche, sondern durch Gauben oder Dachfenster im offenen Treppenhaus kann eine ganz  neue Lichtqualität erzeugt werden, die im gesamten Haus eine andere Atmosphäre kreiert. Die Berücksichtigung von Besonderheiten wie Schrägen, Gauben, weiter Ausblick und das Spiel mit dem Licht fließen in meine Entwürfe ein.
+        ... und dem Himmel ganz nah sein. Die Erschließung des Dachraumes schafft nicht nur zusätzliche Wohnfläche, sondern durch Gauben oder Dachfenster zum Beispiel im offenen Treppenhaus können  ganz neue Lichtverhältnisse erzeugt werden, die im gesamten Haus eine andere Atmosphäre kreieren. Die Berücksichtigung von Besonderheiten wie Schrägen, Gauben, weiter Ausblick und das Spiel mit dem Licht fließen in meine Entwürfe ein.
     </p>
 </section>
 <section class="full-size">
